@@ -1,13 +1,6 @@
 const express = require("express");
 const morgan = require("morgan");
 
-const {
-  logger,
-  validatePost,
-  validateUser,
-  validateUserId,
-} = require("./middleware/middleware");
-
 const server = express();
 
 // remember express by default cannot parse JSON in request bodies
